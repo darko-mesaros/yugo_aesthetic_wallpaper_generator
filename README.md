@@ -6,5 +6,5 @@
 
 ### Usage
 ```bash
-./yugo_aesthetic.sh input_wallpaper.png output_wallpaper.png
+./yugo_aesthetic.sh input_wallpaper.png output_wallpaper.png message_to_display
 ```

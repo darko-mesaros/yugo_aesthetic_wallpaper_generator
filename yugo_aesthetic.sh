@@ -2,16 +2,17 @@
 
 # Variables
 
-CURRENT_DATE=$(date +%b.%d' '%Y)
+CURRENT_DATE=$(date -d '-30 years' +%b.%d' '%Y)
 INPUT="$1"
 OUTPUT="$2"
+MESSAGE="$3"
 
 convert -size 500x200 xc:transparent -font /usr/share/fonts/VCR_OSD_MONO_1.001.ttf -pointsize 52 \
         -draw "gravity southeast \
-        fill pink text 13,72 'Y U G O !' \
-        fill pink text 11,74 'Y U G O !' \
-        fill yellow text 11,72 'Y U G O !' \
-        fill white skewX 2 text 10,72 'Y U G O !' \
+        fill pink text 13,72 '$MESSAGE' \
+        fill pink text 11,74 '$MESSAGE' \
+        fill yellow text 11,72 '$MESSAGE' \
+        fill white skewX 2 text 10,72 '$MESSAGE' \
         fill pink text 12,12 '$CURRENT_DATE' \
         fill pink text 11,14 '$CURRENT_DATE' \
         fill yellow text 11,12 '$CURRENT_DATE' \
