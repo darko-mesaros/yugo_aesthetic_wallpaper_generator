@@ -7,7 +7,13 @@ INPUT="$1"
 OUTPUT="$2"
 MESSAGE="$3"
 
-convert -size 500x200 xc:transparent -font /usr/share/fonts/VCR_OSD_MONO_1.001.ttf -pointsize 52 \
+# Default messag
+if [ -z "$MESSAGE" ]; then
+	MESSAGE='Y U G O S L A V I A !'
+fi
+
+
+convert -size 800x200 xc:transparent -font /usr/share/fonts/VCR_OSD_MONO_1.001.ttf -pointsize 52 \
         -draw "gravity southeast \
         fill pink text 13,72 '$MESSAGE' \
         fill pink text 11,74 '$MESSAGE' \
