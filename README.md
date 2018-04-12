@@ -1,2 +1,1 @@
-# yugo_aesthetic_wallpaper_generator
-# yugo_aesthetic_wallpaper_generator
+# YUGO a e s t h e t i c wallpaper generator
